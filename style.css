@@ -221,7 +221,7 @@ th {
     flex-wrap: wrap;
     text-align: center;
     /* Center the content horizontally */
-    /* justify-content: center;  */
+    justify-content: center; 
 }
 
 .people > * {
