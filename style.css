@@ -258,3 +258,33 @@ th {
     -webkit-columns: 3;
     -moz-columns: 3;
 }
+
+/* Talk styles */
+.talk-title {
+    cursor: pointer;
+    color: #990000;
+    text-decoration: none;
+}
+
+.talk-title::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+.talk-title.expanded::before {
+    content: "▼";
+}
+
+.talk-abstract {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.talk-abstract.show {
+    display: block;
+}

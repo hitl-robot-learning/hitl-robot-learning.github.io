@@ -44,7 +44,7 @@
       <div class="subtitle">RSS 2025 Workshop</div>
       <h2><b>Human-in-the-Loop Robot Learning:<br>Teaching, Correcting, and Adapting</b></h1>
       <div class="subtitle" style="margin: 20px;">
-        June 25, 2025, Location TBA
+        June 25, 2025, <a href="https://maps.app.goo.gl/nbvsSPvL2U6VfNi47" style="color: white;">OHE</a> 100D
       </div>
       </div>
     </div>
@@ -115,7 +115,7 @@
       <h2>Call for Papers</h2>
       <p>
         We are excited to announce the Call for Papers for the workshop. 
-        We invite original contributions presenting novel ideas, research, and applications relevant to the workshop’s theme.
+        We invite original contributions presenting novel ideas, research, and applications relevant to the workshop's theme.
       </p>
 
       <h3>Important Dates</h3>
@@ -211,10 +211,54 @@
             <td class="tg-jkyp">8:30 AM</td>
             <td class="tg-jkyp">09.50 AM</td>
             <td class="tg-za14"><b>Invited Speakers: Part 1 </b> <br/>
-              <b>Speaker </b> - Talk Title (8.30-8.50)<br/>
-              <b>Speaker </b> - Talk Title (8.50-9.10)<br/>
-              <b>Speaker </b> - Talk Title (9.10-9.30)<br/>
-              <b>Speaker </b> - Talk Title (9.30-9.50)
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk1')"><b>Luka Peternel</b> - Incorporating Human Physical Behaviour into Robot Control Loop for Adaptive Human-Robot Co-Manipulation (8.30-8.50)</div>
+                <div id="talk1" class="talk-abstract">
+                  The talk will focus on how to incorporate human physical behaviour into the robot control loop for adaptive human-robot co-manipulation and co-learning.
+                  The human physical behaviour is encoded with several approaches. Higher-level human physical behaviour is learned with a statistical machine learning
+                  method to capture the stochasticity in human actions. The learned behaviour is also augmented by human motor control models that provide additional
+                  intent prediction capabilities to the collaborating robot by understanding the underlying tradeoffs in human movements. The insights about the
+                  lower-level human physical behaviour are incorporated via musculoskeletal models to ensure ergonomics and safety of co-manipulation. Finally,
+                  a co-learning method based on reinforcement learning facilitates continuous adaptation of both the robot and the human. For a more direct 
+                  transfer of human skill, we will examine the concept of teaching robots through teleimpedance, where the developed interfaces enable a 
+                  human operator to (remotely) teach and correct physically interactive tasks.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk2')"><b>Matthew Gombolay</b> - Teaching the Teachers: Robots Helping Humans Demonstrate for Better Robot Learning (8.50-9.10)</div>
+                <div id="talk2" class="talk-abstract">
+                  Assistive robots hold a promise of addressing critical societal needs with an aging
+                  population, such as supporting older adults with activities of daily living. Yet, current systems are
+                  costly, narrowly focused, and unscalable. While large-scale datasets and generalist policies
+                  show promise, achieving positive societal impact will require robots to learn directly from
+                  diverse, non-expert users, who often lack expertise as robot teachers to provide effective data.
+                  In this talk, I will share findings from studies with individuals with Mild Cognitive Impairment
+                  (MCI) and their caregivers, offering unique insights into the challenges and design principles for
+                  user-driven robot learning. I will also present approaches to help end-users provide better
+                  demonstrations, including a reciprocal teaching framework where robots model user behaviors
+                  and offer real-time feedback. Finally, I will propose a roadmap for removing roboticists from the
+                  loop, enabling scalable, autonomous deployment of cognitive robots in homes.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk3')"><b>Elliott Rouse</b> - TBD (9.10-9.30)</div>
+                <div id="talk3" class="talk-abstract">
+                  TBD.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk4')"><b>Tapomayukh Bhattacharjee</b> - Towards Robot Caregiving: Building Robots That Work with Humans-in-the-Loop (9.30-9.50)</div>
+                <div id="talk4" class="talk-abstract">
+                  How can we build robots that meaningfully assist people with mobility limitations in their daily lives?
+                  To support complex caregiving tasks such as robot-assisted feeding, transferring, bathing, and meal preparation,
+                  robots must physically interact with people and objects in dynamic, unstructured environments where 
+                  robot autonomy can fail. In this talk, I will present our work on building human-in-the-loop physical
+                  robot caregiving systems that integrate multimodal perception with adaptive algorithms, enabling them
+                  to be used by non-expert users and to adapt their strategies to unique user preferences. Together, 
+                  these efforts move us closer to creating caregiving robots that are not only technically capable, but 
+                  are also responsive to the real needs of people in care settings.
+                </div>
+              </div>
             </td>
           </tr>
 
@@ -252,10 +296,58 @@
             <td class="tg-jkyp">2:30 PM</td>
             <td class="tg-jkyp">4:00 PM</td>
             <td class="tg-za14"><b>Invited Speakers: Part 2 </b><br/>
-              <b>Speaker </b> - Talk Title (2.30-2.50)<br/>
-              <b>Speaker </b> - Talk Title (2.50-3.10)<br/>
-              <b>Speaker </b> - Talk Title (3.10-3.30)<br/>
-              <b>Speaker </b> - Talk Title (3.30-3.50)
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk5')"><b>Harold Soh</b> - Thoughts on Teaching Robots: Diffusion Models, Test-Time Conditioning, and the Path Ahead (2.30-2.50)</div>
+                <div id="talk5" class="talk-abstract">
+                  In this talk, I will present our recent work on imitation learning using diffusion models, with
+                  a focus on test-time conditioning to adapt robot behavior. I will also highlight our use of differentiable
+                  model checking to validate behavioral correctness. Time permitting, I hope to open a discussion on the
+                  limitations of current approaches—including our own—and the shifts required to advance foundation model-based
+                  methods for human-centered robot teaching.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk6')"><b>Katia Sycara</b> - Human-AI collaboration and goal alignment in planning for dynamic environments (2.50-3.10)</div>
+                <div id="talk6" class="talk-abstract">
+                  We are interested in collaborative planning between agents that learns and humans in
+                  environments that are dynamic and time-stressed. In such a setting, plan generation may
+                  involve multiple iterations of human feedback to an AI in order to effectively capture the
+                  human's preferences for various plan constraints, or when plans need to be revised . This
+                  topic presents two major challenges relevant to this talk. First, Reinforcement Learning,
+                  the natural framework for sequential decision making, produces black box policies,
+                  making it very challenging (impossible) for humans to interact with it in bidirectional ways.
+                  Second, Reinforcement Learning has shown to be vulnerable to mis-specification of the
+                  reward function resulting in mis-alignment of the reward with human intended goal(s).
+                  Finally, Reinforcement Learning policies determine actions to perform in a given
+                  environment state during execution; extracting long-term plans from policies is difficult,
+                  especially where environments are highly uncertain, or where a model of environment
+                  dynamics is unavailable. To address these challenges we have developed a neuro-
+                  symbolic approach where Large Language Models (LLMs) are used to translate user
+                  feedback to machine-understandable goal specifications for interpretable interaction
+                  between human and agent. Creating suitable machine understandable descriptions of the
+                  planning domain, problem, and goal requires expertise in the planning language, limiting
+                  the utility of these tools for non-expert humans. Our approach performs initial translation
+                  of goal specifications to a set of Planning Domain Definition Language (PDDL) goal
+                  constraints using an LLM; such translations often result in imprecise symbolic
+                  specifications, which are difficult to validate directly. To address this, we use an
+                  evolutionary approach to generate a population of symbolic goal specifications and train a
+                  LSTM model to assess whether induced plans in the population adheres to the natural
+                  language user goal specifications and feedback. I will present our approach, evaluation
+                  results and discuss open challenges.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk7')"><b>Andreea Bobu</b> - TBD (3.10-3.30)</div>
+                <div id="talk7" class="talk-abstract">
+                  TBD.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk8')"><b>Kay Ke</b> - TBD (3.30-3.50)</div>
+                <div id="talk8" class="talk-abstract">
+                  TBD.
+                </div>
+              </div>
             </td>
           </tr>
 
@@ -445,5 +537,14 @@
     <br>
     For inquiries, contact us at: <a href="mailto:hitl.robotlearning@gmail.com">hitl.robotlearning@gmail.com</a>
 </div>
+
+<script>
+function toggleAbstract(talkId) {
+  const abstract = document.getElementById(talkId);
+  const title = abstract.previousElementSibling;
+  abstract.classList.toggle('show');
+  title.classList.toggle('expanded');
+}
+</script>
 </body>
 </html>
