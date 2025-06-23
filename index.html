@@ -111,8 +111,27 @@
 
     </div>
 
-    <div class="section" id="call">
-      <h2>Call for Papers</h2>
+    <div class="section" id="call">      
+      <h2>Accepted Papers</h2>
+      <ul>
+          <li><a href="/pdfs/paper1.pdf">R2BC: Multi-Agent Imitation Learning from Single-Agent Demonstrations</a></li>
+          <li><a href="/pdfs/paper2.pdf">DEXOS: Hand Exoskeleton System for Learning Robot Dexterous Manipulation from Human In-The-Wild</a></li>
+          <li><a href="/pdfs/paper3.pdf">Compliant Residual DAgger: Improving Real-World Contact-Rich Manipulation with Human Corrections</a></li>
+          <li><a href="/pdfs/paper4.pdf">Uncertainty Comes for Free: Human-in-the-Loop Policies with Diffusion Models</a></li>
+          <li><a href="/pdfs/paper5.pdf">Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models</a></li>
+          <li><a href="/pdfs/paper6.pdf">ROSETTA: Constructing Code-Based Reward from Unconstrained Language Preference</a></li>
+          <li><a href="/pdfs/paper7.pdf">CREStE: Scalable Mapless Navigation with Internet Scale Priors and Counterfactual Guidance</a></li>
+          <li><a href="/pdfs/paper8.pdf">Masked Inverse Reinforcement Learning for Language Conditioned Reward Learning</a></li>
+          <li><a href="/pdfs/paper9.pdf">Learner and Teacher Perspectives on Learning Rewards from Multiple Types of Human Feedback</a></li>
+          <li><a href="/pdfs/paper10.pdf">GRIM: Task-Oriented Grasping with Conditioning on Generative Examples</a></li>
+          <li><a href="/pdfs/paper11.pdf">CRED: Counterfactual Reasoning and Environment Design for Active Preference Learning</a></li>
+          <li><a href="/pdfs/paper12.pdf">Interpretable Human-in-the-Loop In-Context Preference Learning Via Preference Boundaries</a></li>
+          <li><a href="/pdfs/paper13.pdf">Causally Robust Preference Learning with Reasons</a></li>
+          <li><a href="/pdfs/paper14.pdf">HAND Me the Data: Fast Robot Adaptation via Hand Path Retrieval</a></li>
+          <li><a href="/pdfs/paper15.pdf">Concept Generation through Vision-Language Preference Learning for Understanding Neural Networks’ Internal Representations</a></li>
+        </ul>
+
+      <!-- <h2>Call for Papers</h2>
       <p>
         We are excited to announce the Call for Papers for the workshop. 
         We invite original contributions presenting novel ideas, research, and applications relevant to the workshop's theme.
@@ -145,9 +164,9 @@
           </tr>
         </tbody>
       </table>
-      <ul></ul>      
-      
-      <h3>Submission Guidelines</h3>
+      <ul></ul>  -->
+
+      <!-- <h3>Submission Guidelines</h3>
       <p>
         The submissions must use the RSS template, which is available either in <a href="https://roboticsconference.org/docs/paper-template-latex.tar.gz">LaTeX</a> 
         or <a href="https://roboticsconference.org/docs/paper-template-word.zip">Word</a> format. The recommended paper 
@@ -174,11 +193,11 @@
         <li>Multi-agent systems with human-robot interactions</li>
         <li>Learning from multimodal human feedback</li>
       </ul>
-      </p>
+      </p> -->
     </div>
 
     <div class="section" id="schedule">
-      <h2>Workshop Schedule (Tentative)</h2>
+      <h2>Workshop Schedule</h2>
       <style type="text/css">
         .tg .tg-u4qn {
           background-color: #D9D9D9;
@@ -282,7 +301,9 @@
           <tr>
             <td class="tg-jkyp">11:30 AM</td>
             <td class="tg-jkyp">12:30 PM</td>
-            <td class="tg-za14"><b>Panel Discussion</b> <br/> </td>
+            <td class="tg-za14"><b>Panel Discussion - Will robotics achieve zero-shot generalization or will we always need to fine-tune with human feedback?</b> <br/> 
+            <b>Host:</b> Mike Hagenow <br/>
+            <b>Panelists:</b> Harold Soh, Tapomayukh Bhattacharjee, Daniel Brown</td>
           </tr>
 
           <!-- <tr>
@@ -302,7 +323,32 @@
             <td class="tg-jkyp">4:00 PM</td>
             <td class="tg-za14"><b>Invited Speakers: Part 2 </b><br/>
               <div class="talk-container">
-                <div class="talk-title" onclick="toggleAbstract('talk6')"><b>Katia Sycara</b> - Human-AI collaboration and goal alignment in planning for dynamic environments (2.30-2.50)</div>
+                <div class="talk-title" onclick="toggleAbstract('talk7')"><b>Andreea Bobu</b> - Reading Between the Lines: Using Language Models to Amplify Human Input in Robot Learning (2.30-2.50)</div>
+                <div id="talk7" class="talk-abstract">
+                  Human-in-the-loop robot learning faces a fundamental data challenge that general machine learning 
+                  doesn't: unlike settings where we can collect massive offline datasets, robots must learn from limited,
+                  real-time human interactions. This creates a critical bottleneck: we need methods that can make the 
+                  most of limited human input, or, in other words, that can learn a lot from a little. The key insight
+                  in this talk is that large language models, having been trained on vast amounts of human data, already
+                  possess the common sense and semantic priors we need to fill in these gaps. When someone demonstrates
+                  a task or gives feedback, there's often implicit information that seems obvious to humans but that
+                  robots overlook completely. I discuss three approaches that use language models to "read between the
+                  lines" of human input. I demonstrate how LLMs can take sparse human labels and enable robots to
+                  generalize to complex expressions, extract hidden preferences that are implied by human behavior
+                  but not explicitly stated, and identify missing task concepts based on the situational context of
+                  human input. By strategically combining minimal human input with the rich prior knowledge embedded
+                  in language models, we can achieve the kind of sample-efficient learning that human-in-the-loop
+                  robotics demands for real-world deployment.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk3')"><b>Elliott Rouse</b> - TBD (2.50-3.10)</div>
+                <div id="talk3" class="talk-abstract">
+                  TBD.
+                </div>
+              </div>
+              <div class="talk-container">
+                <div class="talk-title" onclick="toggleAbstract('talk6')"><b>Katia Sycara</b> - Human-AI collaboration and goal alignment in planning for dynamic environments (3.10-3.30)</div>
                 <div id="talk6" class="talk-abstract">
                   We are interested in collaborative planning between agents that learns and humans in
                   environments that are dynamic and time-stressed. In such a setting, plan generation may
@@ -332,33 +378,8 @@
                 </div>
               </div>
               <div class="talk-container">
-                <div class="talk-title" onclick="toggleAbstract('talk7')"><b>Andreea Bobu</b> - Reading Between the Lines: Using Language Models to Amplify Human Input in Robot Learning (2.50-3.10)</div>
-                <div id="talk7" class="talk-abstract">
-                  Human-in-the-loop robot learning faces a fundamental data challenge that general machine learning 
-                  doesn't: unlike settings where we can collect massive offline datasets, robots must learn from limited,
-                  real-time human interactions. This creates a critical bottleneck: we need methods that can make the 
-                  most of limited human input, or, in other words, that can learn a lot from a little. The key insight
-                  in this talk is that large language models, having been trained on vast amounts of human data, already
-                  possess the common sense and semantic priors we need to fill in these gaps. When someone demonstrates
-                  a task or gives feedback, there's often implicit information that seems obvious to humans but that
-                  robots overlook completely. I discuss three approaches that use language models to "read between the
-                  lines" of human input. I demonstrate how LLMs can take sparse human labels and enable robots to
-                  generalize to complex expressions, extract hidden preferences that are implied by human behavior
-                  but not explicitly stated, and identify missing task concepts based on the situational context of
-                  human input. By strategically combining minimal human input with the rich prior knowledge embedded
-                  in language models, we can achieve the kind of sample-efficient learning that human-in-the-loop
-                  robotics demands for real-world deployment.
-                </div>
-              </div>
-              <div class="talk-container">
-                <div class="talk-title" onclick="toggleAbstract('talk8')"><b>Kay Ke</b> - TBD (3.10-3.30)</div>
+                <div class="talk-title" onclick="toggleAbstract('talk8')"><b>Kay Ke</b> - TBD (3.30-3.50)</div>
                 <div id="talk8" class="talk-abstract">
-                  TBD.
-                </div>
-              </div>
-              <div class="talk-container">
-                <div class="talk-title" onclick="toggleAbstract('talk3')"><b>Elliott Rouse</b> - TBD (3.30-3.50)</div>
-                <div id="talk3" class="talk-abstract">
                   TBD.
                 </div>
               </div>
@@ -380,7 +401,9 @@
           <tr>
             <td class="tg-jkyp">5:40 PM</td>
             <td class="tg-jkyp">6:30 PM</td>
-            <td class="tg-za14"><b>Panel Discussion</b> <br/> </td>
+            <td class="tg-za14"><b>Panel Discussion - Can we replace humans’ feedback with feedback from foundation models?</b> <br/> 
+            <b>Host:</b> Erdem Bıyık <br/>
+            <b>Panelists:</b> Katia Sycara, Andreea Bobu, Maegan Tucker, Kay Ke </td>
           </tr>
 
           <!-- <tr>
@@ -461,25 +484,6 @@
           <div>Katia Sycara</div>
           <div class="aff">CMU</div>
         </a>
-
-        <!-- <a href="https://web.eecs.umich.edu/~justincj/">
-          <img src="./assets/placeholder.png">
-          <div>Justin Johnson </div>
-          <div class="aff">University of Michigan</div>
-        </a>
-
-
-        <a href="https://goldberg.berkeley.edu/">
-          <img src="./assets/placeholder.png">
-          <div>Ken Goldberg</div>
-          <div class="aff">UC Berkeley</div>
-        </a>
-
-        <a href="http://ranjaykrishna.com/index.html">
-          <img src="./assets/placeholder.png">
-          <div>Ranjay Krishna</div>
-          <div class="aff">University of Washington</div>
-        </a> -->
    
       </div>
     </div>
